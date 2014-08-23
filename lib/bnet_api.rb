@@ -9,4 +9,3 @@ require 'bnet_api/config'
 
 require 'bnet_api/wow/character/character'
 require 'bnet_api/wow/guild/guild'
-require 'bnet_api/wow/guild/guild_news'
