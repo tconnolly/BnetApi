@@ -2,7 +2,8 @@ require 'rails/generators'
 
 module BnetApi
   module Generators
-    class InstallGenerator < Rails::Generators::Base
+    class ConfigGenerator < Rails::Generators::Base
+      desc "Creates a BnetApi gem configuration file at config/bnet_api.yml, and an initializer at config/initializers/bnet_api.rb"
       
       # API to use
       class_option :api, type: :string, default: "wow"
@@ -20,7 +21,12 @@ module BnetApi
         @source_root ||= File.expand_path(File.join(File.dirname(__FILE__), "templates"))
       end
       
-      # Copy configuration
+      # Copy config file
+      def copy_config_file
+        template "bnet_api.yml", "config/bnet_api.yml"
+      end
+      
+      # Copy initializer
       def copy_initializer
         template "bnet_api.rb", "config/initializers/bnet_api.rb"
       end
