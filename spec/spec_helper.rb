@@ -14,14 +14,11 @@ Turn.config do |c|
   c.natural = true
 end
 
-VCR.config do |c|
+VCR.configure do |c|
   c.cassette_library_dir = 'spec/fixtures/bnet_api_cassettes'
-  c.stub_with :webmock
+  c.hook_into :webmock
 end
 
-RSpec.configure do |config|
-  # Set the BnetApi API key
-  BnetApi.configure do |c|
-    c.api_key = :wnahbngtrs3maxkmya6ga8q5dvm78v23
-  end
+BnetApi.configure do |c|
+  c.api_key = :wnahbngtrs3maxkmya6ga8q5dvm78v23
 end

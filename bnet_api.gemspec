@@ -28,4 +28,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "turn"
   s.add_development_dependency "vcr"
   s.add_development_dependency "webmock"
+  s.add_development_dependency "win32console"
 end

@@ -1,0 +1,218 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.battle.net/d3/profile/Ragwolf%232851/?apikey=wnahbngtrs3maxkmya6ga8q5dvm78v23&locale=en_GB
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Language:
+      - en-GB
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sat, 23 Aug 2014 17:24:05 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Mashery-Responder:
+      - prod-j-worker-us-east-1c-999.mashery.com
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{
+
+        "heroes" : [ {
+
+        "paragonLevel" : 57,
+
+        "name" : "Ragwolf",
+
+        "id" : 423386,
+
+        "level" : 70,
+
+        "hardcore" : false,
+
+        "gender" : 0,
+
+        "dead" : false,
+
+        "class" : "demon-hunter",
+
+        "last-updated" : 1400546737
+
+        }, {
+
+        "paragonLevel" : 57,
+
+        "name" : "Wagwolf",
+
+        "id" : 6121185,
+
+        "level" : 68,
+
+        "hardcore" : false,
+
+        "gender" : 1,
+
+        "dead" : false,
+
+        "class" : "wizard",
+
+        "last-updated" : 1408292757
+
+        }, {
+
+        "paragonLevel" : 57,
+
+        "name" : "Spaldine",
+
+        "id" : 10821104,
+
+        "level" : 53,
+
+        "hardcore" : false,
+
+        "gender" : 0,
+
+        "dead" : false,
+
+        "class" : "barbarian",
+
+        "last-updated" : 1396659115
+
+        }, {
+
+        "paragonLevel" : 57,
+
+        "name" : "Feneficus",
+
+        "id" : 6304827,
+
+        "level" : 15,
+
+        "hardcore" : false,
+
+        "gender" : 0,
+
+        "dead" : false,
+
+        "class" : "monk",
+
+        "last-updated" : 1391125807
+
+        }, {
+
+        "paragonLevel" : 57,
+
+        "name" : "Callidus",
+
+        "id" : 38881427,
+
+        "level" : 14,
+
+        "hardcore" : false,
+
+        "gender" : 0,
+
+        "dead" : false,
+
+        "class" : "crusader",
+
+        "last-updated" : 1396114016
+
+        }, {
+
+        "paragonLevel" : 57,
+
+        "name" : "Wormart",
+
+        "id" : 10781906,
+
+        "level" : 9,
+
+        "hardcore" : false,
+
+        "gender" : 0,
+
+        "dead" : false,
+
+        "class" : "witch-doctor",
+
+        "last-updated" : 1338910756
+
+        } ],
+
+        "lastHeroPlayed" : 6121185,
+
+        "lastUpdated" : 1408292757,
+
+        "kills" : {
+
+        "monsters" : 64458,
+
+        "elites" : 4116,
+
+        "hardcoreMonsters" : 0
+
+        },
+
+        "timePlayed" : {
+
+        "barbarian" : 0.17,
+
+        "crusader" : 0.0,
+
+        "demon-hunter" : 1.0,
+
+        "monk" : 0.042,
+
+        "witch-doctor" : 0.019,
+
+        "wizard" : 0.203
+
+        },
+
+        "fallenHeroes" : [ ],
+
+        "paragonLevel" : 57,
+
+        "paragonLevelHardcore" : 0,
+
+        "battleTag" : "Ragwolf#2851",
+
+        "progression" : {
+
+        "act1" : true,
+
+        "act2" : true,
+
+        "act3" : true,
+
+        "act4" : true,
+
+        "act5" : true
+
+        }
+
+        }'
+    http_version: 
+  recorded_at: Sat, 23 Aug 2014 17:24:05 GMT
+recorded_with: VCR 2.9.2

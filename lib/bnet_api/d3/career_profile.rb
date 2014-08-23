@@ -10,8 +10,15 @@ module BnetApi::D3
                   :paragon_level_hardcore,
                   :progression,
                   :time_played
-                  
-    def initialize(json)
+    
+    def initialize(battle_tag = nil)
+      @battle_tag = battle_tag
+    end
+    
+    def get
+      BnetApi.api = :d3
+      json = BnetApi::Api.get("profile/#{battle_tag}/")
+      
       @battle_tag = json["battleTag"]
       @fallen_heroes = Array.new
       # Loop over fallen heroes array and add each one
@@ -33,12 +40,21 @@ module BnetApi::D3
       @last_hero_played = json["lastHeroPlayed"]
       @last_updated = Time.at(json["lastUpdated"])
       @paragon_level = json["paragonLevel"]
-      @paragon_level_hardcore = json["paragonLevelHardcore"]            
+      @paragon_level_hardcore = json["paragonLevelHardcore"]
+      
+      @progression = {
+        act1: json["progression"]["act1"],
+        act2: json["progression"]["act2"],
+        act3: json["progression"]["act3"],
+        act4: json["progression"]["act4"],
+        act5: json["progression"]["act5"]
+      }
+      
+      self
     end
     
     def self.find_by_battle_tag(battle_tag)
-      BnetApi.api = :d3
-      return CareerProfile.new(BnetApi::Api.get("profile/#{battle_tag}/"))
+      return CareerProfile.new(battle_tag).get
     end
   end
 end

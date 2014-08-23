@@ -9,8 +9,16 @@ module BnetApi::D3
                   :level,
                   :name,
                   :paragon_level
-                  
-    def initialize(json)
+    
+    def initialize(battle_tag = nil, id = nil)
+      @battle_tag = battle_tag
+      @id = id
+    end
+    
+    def get
+      BnetApi.api = :d3
+      json = BnetApi::Api.get("profile/#{battle_tag}/hero/#{id}")
+      
       @id = json["id"]
       @class_name = json["class"]
       @dead = json["dead"]
@@ -20,6 +28,8 @@ module BnetApi::D3
       @level = json["level"]
       @name = json["name"]
       @paragon_level = json["paragonLevel"]
+      
+      self
     end
     
     def load
@@ -27,8 +37,7 @@ module BnetApi::D3
     end
     
     def self.find_by_battle_tag_and_id(battle_tag, id)
-      BnetApi.api = :d3
-      return Hero.new(BnetApi::Api.get("profile/#{battle_tag}/hero/#{id}"))
+      return Hero.new(battle_tag, id).get
     end
   end
 end
