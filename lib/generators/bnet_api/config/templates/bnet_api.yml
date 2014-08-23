@@ -1,5 +1,5 @@
 development:
-  api: "wow"
+  api: <%= options.api %>
   api_key: "TODO: Enter your API key"
-  locale: "en_GB"
-  region: "eu"
+  locale: <%= options.locale %>
+  region: <%= options.region %>
