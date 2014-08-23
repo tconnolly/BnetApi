@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bnet_api (0.0.1)
+    bnet_api (0.0.2)
       certified
       omniauth-bnet
       omniauth-github
@@ -9,12 +9,17 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.3.6)
+    ansi (1.4.3)
     certified (1.0.0)
+    crack (0.4.2)
+      safe_yaml (~> 1.0.0)
     diff-lcs (1.2.5)
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
     hashie (3.2.0)
     jwt (1.0.0)
+    minitest (4.7.5)
     multi_json (1.10.1)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
@@ -39,22 +44,35 @@ GEM
       oauth2 (~> 1.0)
       omniauth (~> 1.2)
     rack (1.5.2)
+    rake (10.3.2)
     rspec (3.0.0)
       rspec-core (~> 3.0.0)
       rspec-expectations (~> 3.0.0)
       rspec-mocks (~> 3.0.0)
-    rspec-core (3.0.3)
+    rspec-core (3.0.4)
       rspec-support (~> 3.0.0)
-    rspec-expectations (3.0.3)
+    rspec-expectations (3.0.4)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.0.0)
-    rspec-mocks (3.0.3)
+    rspec-mocks (3.0.4)
       rspec-support (~> 3.0.0)
-    rspec-support (3.0.3)
+    rspec-support (3.0.4)
+    safe_yaml (1.0.3)
+    turn (0.9.7)
+      ansi
+      minitest (~> 4)
+    vcr (2.9.2)
+    webmock (1.18.0)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
 
 PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
   bnet_api!
+  rake
   rspec
+  turn
+  vcr
+  webmock

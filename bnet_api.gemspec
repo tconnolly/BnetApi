@@ -23,5 +23,9 @@ Gem::Specification.new do |s|
   s.add_dependency "omniauth-github"
   s.add_dependency "omniauth-bnet"
   
+  s.add_development_dependency "rake"
   s.add_development_dependency "rspec"
+  s.add_development_dependency "turn"
+  s.add_development_dependency "vcr"
+  s.add_development_dependency "webmock"
 end

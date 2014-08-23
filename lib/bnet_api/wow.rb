@@ -1,3 +1,3 @@
-require 'wow/achievement/achievement'
-require 'wow/character/character'
-require 'wow/guild/guild'
+require 'bnet_api/wow/achievement/achievement'
+require 'bnet_api/wow/guild/guild'
+require 'bnet_api/wow/character/character'

@@ -9,7 +9,7 @@ module BnetApi
       if query == nil
         query = ""
       end
-      
+      puts "Requesting: #{request_url}#{query}"
       return JSON.parse(open(request_url + query, { ssl_verify_mode: OpenSSL::SSL::VERIFY_NONE }).read)
     end
 
