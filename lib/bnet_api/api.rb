@@ -1,10 +1,15 @@
 module BnetApi  
   class Api    
-    def self.get(request, fields = nil)
+    def self.get(request, oauth = false, fields = nil)
       base_uri = "https://#{BnetApi.region}.api.battle.net/#{BnetApi.api}/"
       
       request_url = base_uri + URI::encode(request)
-      query = self.build_query(fields)
+      
+      if oauth
+        query = "?access_token=#{BnetApi.oauth_token}&locale=#{BnetApi.locale}"
+      else
+        query = self.build_query(fields)
+      end
       
       if query == nil
         query = ""

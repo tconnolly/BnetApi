@@ -20,8 +20,6 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   
   s.add_dependency "certified"
-  s.add_dependency "omniauth-github"
-  s.add_dependency "omniauth-bnet"
   
   s.add_development_dependency "rake"
   s.add_development_dependency "rspec"

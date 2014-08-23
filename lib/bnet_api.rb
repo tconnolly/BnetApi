@@ -2,8 +2,6 @@ require 'json'
 require 'openssl'
 require 'open-uri'
 
-require 'omniauth-bnet'
-
 require 'bnet_api/api'
 require 'bnet_api/d3'
 require 'bnet_api/wow'
@@ -44,6 +42,9 @@ module BnetApi
   attr_accessor :locale
   @@locale = :en_GB
   
+  # OAuth token to use for OAuth profile APIs.
+  @@oauth_token = nil
+  
   # Region to use.
   # Available regions:
   #   US
@@ -76,6 +77,14 @@ module BnetApi
   
   def self.locale=(locale)
     @@locale = locale
+  end
+  
+  def self.oauth_token
+    @@oauth_token
+  end
+  
+  def self.oauth_token=(oauth_token)
+    @@oauth_token = oauth_token
   end
   
   def self.region

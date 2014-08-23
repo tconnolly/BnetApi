@@ -1,16 +1,16 @@
-module BnetApi
+module BnetApi::WoW
   class Character
-    attr_accessor :achievementPoints,
+    attr_accessor :achievement_points,
                   :battlegroup,
-                  :className,
+                  :class_name,
                   :gender,
-                  :lastModified,
+                  :last_modified,
                   :level,
                   :name,
                   :race,
                   :realm,
                   :thumbnail,
-                  :totalHonorableKills,
+                  :total_honorable_kills,
                   # Optional fields
                   :achievements,
                   :appearance,
@@ -95,12 +95,12 @@ module BnetApi
       @titles = json["titles"]
     end
 
-    def className classId
-      @className = CLASSES[classId]
+    def class_name class_id
+      @class_name = CLASSES[class_id]
     end
 
-    def className
-      @className
+    def class_name
+      @class_name
     end
 
     # Returns a new character using the specified realm and character names
