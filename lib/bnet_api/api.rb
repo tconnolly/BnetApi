@@ -1,7 +1,7 @@
 module BnetApi  
   class Api    
     def self.get(request, fields = nil)
-      base_uri = "https://#{config.region}.api.battle.net/#{config.api}/"
+      base_uri = "https://#{BnetApi.region}.api.battle.net/#{BnetApi.api}/"
       
       request_url = base_uri + URI::encode(request)
       query = self.build_query(fields)
@@ -15,9 +15,9 @@ module BnetApi
 
     def self.build_query(fields)
       if fields != nil
-        return "?fields=#{fields[:fields]}&apikey=#{config.api_key}&locale=#{config.locale}"
+        return "?fields=#{fields[:fields]}&apikey=#{BnetApi.api_key}&locale=#{BnetApi.locale}"
       else
-        return "?apikey=#{config.api_key}&locale=#{config.locale}"
+        return "?apikey=#{BnetApi.api_key}&locale=#{BnetApi.locale}"
       end
     end
   end
