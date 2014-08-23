@@ -1,5 +1,7 @@
 class InitializerGenerator < Rails::Generators::Base
-  def create_initializer_file
-    create_file "config/initializers/bnet_api.rb"
+  source_root File.expand_path("../templates", __FILE__)
+  
+  def copy_initializer_file
+    copy_file "initializer.rb", "config/initializers/#{file_name}.rb"
   end
 end
