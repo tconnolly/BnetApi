@@ -20,5 +20,5 @@ VCR.configure do |c|
 end
 
 BnetApi.configure do |c|
-  c.api_key = :wnahbngtrs3maxkmya6ga8q5dvm78v23
+  c.api_key = ENV["BNET_API_KEY"]
 end

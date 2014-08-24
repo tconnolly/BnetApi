@@ -20,8 +20,7 @@ module BnetApi
   
   # Application API key.
   attr_accessor :api_key
-  # TODO: Remove my API key
-  @@api_key = :wnahbngtrs3maxkmya6ga8q5dvm78v23
+  @@api_key = ENV["BNET_API_KEY"]
   
   # Locale to use.
   # Available locales:
