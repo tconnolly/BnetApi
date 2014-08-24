@@ -21,7 +21,7 @@ http_interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Sat, 23 Aug 2014 23:51:09 GMT
+      - Sun, 24 Aug 2014 00:39:09 GMT
       Server:
       - Apache
       Vary:
@@ -29,7 +29,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       X-Mashery-Responder:
-      - prod-j-worker-us-east-1c-37.mashery.com
+      - prod-j-worker-us-east-1b-30.mashery.com
       Transfer-Encoding:
       - chunked
       Connection:
@@ -47,66 +47,29 @@ http_interactions:
         / Crueldad","class":8,"race":1,"gender":1,"level":3,"achievementPoints":0,"thumbnail":"internal-record-3681/98/116951650-avatar.jpg"},{"name":"Umbrensis","realm":"Thunderhorn","battlegroup":"Misery","class":4,"race":1,"gender":1,"level":1,"achievementPoints":0,"thumbnail":"wildhammer/162/91573666-avatar.jpg"},{"name":"Kwikstrike","realm":"Thunderhorn","battlegroup":"Misery","class":2,"race":10,"gender":0,"level":90,"achievementPoints":8445,"thumbnail":"wildhammer/168/92970664-avatar.jpg","spec":{"name":"Retribution","role":"DPS","backgroundImage":"bg-paladin-retribution","icon":"spell_holy_auraoflight","description":"A
         righteous crusader who judges and punishes opponents with weapons and Holy
         magic.","order":2},"guild":"GCHQ","guildRealm":"Thunderhorn"},{"name":"Imnotanelf","realm":"Culte
-        de la Rive noire","battlegroup":"Embuscade / Hinterhalt","class":8,"race":1,"gender":0,"level":2,"achievementPoints":0,"thumbnail":"la-croisade-ecarlate/39/70694695-avatar.jpg"},{"name":"Arangar","realm":"Thunderhorn","battlegroup":"Misery","class":5,"race":26,"gender":1,"level":90,"achievementPoints":8615,"thumbnail":"wildhammer/163/92012195-avatar.jpg","spec":{"name":"Holy","role":"HEALING","backgroundImage":"bg-priest-holy","icon":"spell_holy_guardianspirit","description":"A
+        de la Rive noire","battlegroup":"Embuscade / Hinterhalt","class":8,"race":1,"gender":0,"level":2,"achievementPoints":0,"thumbnail":"la-croisade-ecarlate/39/70694695-avatar.jpg"},{"name":"Battlecow","realm":"Thunderhorn","battlegroup":"Misery","class":1,"race":6,"gender":0,"level":2,"achievementPoints":0,"thumbnail":"wildhammer/12/91573004-avatar.jpg"},{"name":"Arangar","realm":"Thunderhorn","battlegroup":"Misery","class":5,"race":26,"gender":1,"level":90,"achievementPoints":8615,"thumbnail":"wildhammer/163/92012195-avatar.jpg","spec":{"name":"Holy","role":"HEALING","backgroundImage":"bg-priest-holy","icon":"spell_holy_guardianspirit","description":"A
         versatile healer who can reverse damage on individuals or groups and even
-        heal from beyond the grave.","order":1},"guild":"Banana Revolution","guildRealm":"Thunderhorn"},{"name":"Battlecow","realm":"Thunderhorn","battlegroup":"Misery","class":1,"race":6,"gender":0,"level":2,"achievementPoints":0,"thumbnail":"wildhammer/12/91573004-avatar.jpg"},{"name":"Ragwolf","realm":"Thunderhorn","battlegroup":"Misery","class":8,"race":5,"gender":1,"level":90,"achievementPoints":8635,"thumbnail":"wildhammer/209/92974033-avatar.jpg","spec":{"name":"Fire","role":"DPS","backgroundImage":"bg-mage-fire","icon":"spell_fire_firebolt02","description":"Ignite
+        heal from beyond the grave.","order":1},"guild":"Banana Revolution","guildRealm":"Thunderhorn"},{"name":"Ragwolf","realm":"Thunderhorn","battlegroup":"Misery","class":8,"race":5,"gender":1,"level":90,"achievementPoints":8635,"thumbnail":"wildhammer/209/92974033-avatar.jpg","spec":{"name":"Fire","role":"DPS","backgroundImage":"bg-mage-fire","icon":"spell_fire_firebolt02","description":"Ignite
         enemies with balls of fire and combustive flames.","order":1},"guild":"Banana
         Revolution","guildRealm":"Thunderhorn"},{"name":"Ragwolf","realm":"Skullcrusher","battlegroup":"Glutsturm
         / Emberstorm","class":8,"race":10,"gender":0,"level":1,"achievementPoints":0,"thumbnail":"xavius/195/84937667-avatar.jpg"},{"name":"Wormart","realm":"Stormscale","battlegroup":"Vengeance
         / Rache","class":5,"race":11,"gender":0,"level":4,"achievementPoints":0,"thumbnail":"winterhuf/161/69860769-avatar.jpg"},{"name":"Ragwolf","realm":"Saurfang","battlegroup":"Cruelty
         / Crueldad","class":1,"race":2,"gender":0,"level":8,"achievementPoints":0,"thumbnail":"darkspear/117/112185973-avatar.jpg"},{"name":"Cruorfang","realm":"Thunderhorn","battlegroup":"Misery","class":3,"race":2,"gender":0,"level":90,"achievementPoints":8635,"thumbnail":"wildhammer/35/92013603-avatar.jpg","spec":{"name":"Survival","role":"DPS","backgroundImage":"bg-hunter-survival","icon":"ability_hunter_camouflage","description":"A
         rugged tracker who favors using animal venom, explosives and traps as deadly
-        weapons.","order":2},"guild":"GCHQ","guildRealm":"Thunderhorn"},{"name":"Maledeus","realm":"Thunderhorn","battlegroup":"Misery","class":9,"race":5,"gender":1,"level":90,"achievementPoints":8635,"thumbnail":"wildhammer/254/91386622-avatar.jpg","spec":{"name":"Destruction","role":"DPS","backgroundImage":"bg-warlock-destruction","icon":"spell_shadow_rainoffire","description":"A
+        weapons.","order":2},"guild":"GCHQ","guildRealm":"Thunderhorn"},{"name":"Ajudicator","realm":"Magtheridon","battlegroup":"Cruelty
+        / Crueldad","class":2,"race":11,"gender":0,"level":6,"achievementPoints":0,"thumbnail":"internal-record-3681/163/116661155-avatar.jpg"},{"name":"Maledeus","realm":"Thunderhorn","battlegroup":"Misery","class":9,"race":5,"gender":1,"level":90,"achievementPoints":8635,"thumbnail":"wildhammer/254/91386622-avatar.jpg","spec":{"name":"Destruction","role":"DPS","backgroundImage":"bg-warlock-destruction","icon":"spell_shadow_rainoffire","description":"A
         master of chaos who calls down fire to burn and demolish enemies.","order":2},"guild":"Banana
-        Revolution","guildRealm":"Thunderhorn"},{"name":"Ajudicator","realm":"Magtheridon","battlegroup":"Cruelty
-        / Crueldad","class":2,"race":11,"gender":0,"level":6,"achievementPoints":0,"thumbnail":"internal-record-3681/163/116661155-avatar.jpg"},{"name":"Kaioken","realm":"Thunderhorn","battlegroup":"Misery","class":10,"race":5,"gender":1,"level":90,"achievementPoints":8525,"thumbnail":"wildhammer/131/91437187-avatar.jpg","spec":{"name":"Windwalker","role":"DPS","backgroundImage":"bg-monk-battledancer","icon":"spell_monk_windwalker_spec","description":"A
-        martial artist without peer who pummels foes with hands and fists.","order":2}},{"name":"Battlepanda","realm":"Thunderhorn","battlegroup":"Misery","class":1,"race":24,"gender":0,"level":0,"achievementPoints":0,"thumbnail":"wildhammer/119/91550839-avatar.jpg"},{"name":"Wormart","realm":"Thunderhorn","battlegroup":"Misery","class":11,"race":6,"gender":0,"level":90,"achievementPoints":8525,"thumbnail":"wildhammer/184/90682040-avatar.jpg","spec":{"name":"Restoration","role":"HEALING","backgroundImage":"bg-druid-restoration","icon":"spell_nature_healingtouch","description":"Uses
-        heal-over-time Nature spells to keep allies alive.","order":3},"guild":"Banana
-        Revolution","guildRealm":"Thunderhorn"},{"name":"Ragwolf","realm":"Mazrigos","battlegroup":"Cruelty
+        Revolution","guildRealm":"Thunderhorn"},{"name":"Kaioken","realm":"Thunderhorn","battlegroup":"Misery","class":10,"race":5,"gender":1,"level":90,"achievementPoints":8525,"thumbnail":"wildhammer/131/91437187-avatar.jpg","spec":{"name":"Windwalker","role":"DPS","backgroundImage":"bg-monk-battledancer","icon":"spell_monk_windwalker_spec","description":"A
+        martial artist without peer who pummels foes with hands and fists.","order":2}},{"name":"Battlepanda","realm":"Thunderhorn","battlegroup":"Misery","class":1,"race":24,"gender":0,"level":0,"achievementPoints":0,"thumbnail":"wildhammer/119/91550839-avatar.jpg"},{"name":"Ragwolf","realm":"Mazrigos","battlegroup":"Cruelty
         / Crueldad","class":6,"race":1,"gender":0,"level":55,"achievementPoints":0,"thumbnail":"lightbringer/38/113448998-avatar.jpg"},{"name":"Grumbos","realm":"Argent
-        Dawn","battlegroup":"Reckoning / Abrechnung","class":1,"race":6,"gender":0,"level":1,"achievementPoints":0,"thumbnail":"argent-dawn/130/69317506-avatar.jpg"},{"name":"Omgimanelf","realm":"Culte
+        Dawn","battlegroup":"Reckoning / Abrechnung","class":1,"race":6,"gender":0,"level":1,"achievementPoints":0,"thumbnail":"argent-dawn/130/69317506-avatar.jpg"},{"name":"Wormart","realm":"Thunderhorn","battlegroup":"Misery","class":11,"race":6,"gender":0,"level":90,"achievementPoints":8525,"thumbnail":"wildhammer/184/90682040-avatar.jpg","spec":{"name":"Restoration","role":"HEALING","backgroundImage":"bg-druid-restoration","icon":"spell_nature_healingtouch","description":"Uses
+        heal-over-time Nature spells to keep allies alive.","order":3},"guild":"Banana
+        Revolution","guildRealm":"Thunderhorn"},{"name":"Omgimanelf","realm":"Culte
         de la Rive noire","battlegroup":"Embuscade / Hinterhalt","class":5,"race":1,"gender":0,"level":1,"achievementPoints":0,"thumbnail":"la-croisade-ecarlate/238/70700270-avatar.jpg"},{"name":"Fortideus","realm":"Wildhammer","battlegroup":"Misery","class":1,"race":1,"gender":1,"level":0,"achievementPoints":0,"thumbnail":"wildhammer/243/105714675-avatar.jpg"},{"name":"Wagwolf","realm":"Thunderhorn","battlegroup":"Misery","class":7,"race":26,"gender":1,"level":90,"achievementPoints":8495,"thumbnail":"wildhammer/153/92284057-avatar.jpg","spec":{"name":"Enhancement","role":"DPS","backgroundImage":"bg-shaman-enhancement","icon":"spell_shaman_improvedstormstrike","description":"A
-        totemic warrior who strikes foes with weapons imbued with elemental power.","order":1}},{"name":"Spaldine","realm":"Thunderhorn","battlegroup":"Misery","class":1,"race":10,"gender":1,"level":90,"achievementPoints":8635,"thumbnail":"wildhammer/125/92311933-avatar.jpg","spec":{"name":"Arms","role":"DPS","backgroundImage":"bg-warrior-arms","icon":"ability_warrior_savageblow","description":"A
+        totemic warrior who strikes foes with weapons imbued with elemental power.","order":1}},{"name":"Xanathar","realm":"Stormscale","battlegroup":"Vengeance
+        / Rache","class":6,"race":5,"gender":0,"level":55,"achievementPoints":0,"thumbnail":"winterhuf/61/70207037-avatar.jpg"},{"name":"Spaldine","realm":"Thunderhorn","battlegroup":"Misery","class":1,"race":10,"gender":1,"level":90,"achievementPoints":8635,"thumbnail":"wildhammer/125/92311933-avatar.jpg","spec":{"name":"Arms","role":"DPS","backgroundImage":"bg-warrior-arms","icon":"ability_warrior_savageblow","description":"A
         battle-hardened master of two-handed weapons, using mobility and overpowering
-        attacks to strike her opponents down.","order":0},"guild":"Banana Revolution","guildRealm":"Thunderhorn"},{"name":"Xanathar","realm":"Stormscale","battlegroup":"Vengeance
-        / Rache","class":6,"race":5,"gender":0,"level":55,"achievementPoints":0,"thumbnail":"winterhuf/61/70207037-avatar.jpg"}]}'
+        attacks to strike his opponents down.","order":0},"guild":"Banana Revolution","guildRealm":"Thunderhorn"}]}'
     http_version: 
-  recorded_at: Sat, 23 Aug 2014 23:51:10 GMT
-- request:
-    method: get
-    uri: https://eu.api.battle.net/wow/user/characters?access_token=&locale=en_GB
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - ! '*/*'
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 401
-      message: Unauthorized
-    headers:
-      Content-Type:
-      - application/json
-      Date:
-      - Sun, 24 Aug 2014 00:18:26 GMT
-      Server:
-      - Mashery Proxy
-      Www-Authenticate:
-      - Bearer realm="eu.api.battle.net", error="invalid_token"
-      X-Mashery-Error-Code:
-      - ERR_403_DEVELOPER_INACTIVE
-      X-Mashery-Responder:
-      - prod-j-worker-us-east-1b-30.mashery.com
-      Content-Length:
-      - '61'
-      Connection:
-      - keep-alive
-    body:
-      encoding: US-ASCII
-      string: ! '{"code":403, "type":"Forbidden", "detail":"Account Inactive"}'
-    http_version: 
-  recorded_at: Sun, 24 Aug 2014 00:18:26 GMT
+  recorded_at: Sun, 24 Aug 2014 00:39:10 GMT
 recorded_with: VCR 2.9.2

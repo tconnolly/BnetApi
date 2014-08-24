@@ -34,12 +34,12 @@ describe BnetApi::SC2::OAuthProfile do
       VCR.eject_cassette
     end
     
-    #it "must get the right oauth profile" do
-    #  BnetApi.oauth_token = :nfpead9ubmch2f2g5xt4gxxh
-    #  oauth_profile.get
+    it "must get the right oauth profile" do
+      BnetApi.oauth_token = :nfpead9ubmch2f2g5xt4gxxh
+      oauth_profile.get
       
-    #  oauth_profile.characters.wont_be_nil
-    #end
+      oauth_profile.characters.wont_be_nil
+    end
     
     it "records the fixture" do
       BnetApi.oauth_token = :nfpead9ubmch2f2g5xt4gxxh

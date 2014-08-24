@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.battle.net/sc2/profile/user?access_token=nfpead9ubmch2f2g5xt4gxxh&locale=en_GB
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Language:
+      - en-GB
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sun, 24 Aug 2014 00:39:09 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Mashery-Responder:
+      - prod-j-worker-us-east-1b-36.mashery.com
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! "{\n  \"characters\" : [ {\n    \"id\" : 4587449,\n    \"realm\" :
+        1,\n    \"name\" : \"Ragwolf#156\",\n    \"displayName\" : \"Ragwolf\",\n
+        \   \"clanName\" : \"\",\n    \"clanTag\" : \"\",\n    \"profilePath\" : \"/profile/4587449/1/Ragwolf/\",\n
+        \   \"portrait\" : {\n      \"x\" : 0,\n      \"y\" : 0,\n      \"w\" : 90,\n
+        \     \"h\" : 90,\n      \"offset\" : 0,\n      \"url\" : \"http://media.blizzard.com/sc2/portraits/0-90.jpg\"\n
+        \   },\n    \"avatar\" : {\n      \"x\" : 0,\n      \"y\" : 0,\n      \"w\"
+        : 90,\n      \"h\" : 90,\n      \"offset\" : 0,\n      \"url\" : \"http://media.blizzard.com/sc2/portraits/0-0.jpg\"\n
+        \   },\n    \"career\" : {\n      \"primaryRace\" : \"UNKNOWN\",\n      \"terranWins\"
+        : 0,\n      \"protossWins\" : 0,\n      \"zergWins\" : 0,\n      \"seasonTotalGames\"
+        : 0,\n      \"careerTotalGames\" : 0\n    },\n    \"swarmLevels\" : {\n      \"level\"
+        : 0,\n      \"terran\" : {\n        \"level\" : 0,\n        \"totalLevelXP\"
+        : 5000,\n        \"currentLevelXP\" : 0\n      },\n      \"zerg\" : {\n        \"level\"
+        : 0,\n        \"totalLevelXP\" : 5000,\n        \"currentLevelXP\" : 0\n      },\n
+        \     \"protoss\" : {\n        \"level\" : 0,\n        \"totalLevelXP\" :
+        5000,\n        \"currentLevelXP\" : 0\n      }\n    },\n    \"campaign\" :
+        { },\n    \"season\" : {\n      \"seasonId\" : 19,\n      \"seasonNumber\"
+        : 3,\n      \"seasonYear\" : 2014,\n      \"totalGamesThisSeason\" : 0\n    },\n
+        \   \"rewards\" : {\n      \"selected\" : [ 18730036, 656055948, 1500394717,
+        1751841167, 2009110693, 2359737029, 2820704051, 2951153716, 3065782512, 3673336716,
+        3717180683, 3979921667, 4067220888 ],\n      \"earned\" : [ ]\n    },\n    \"achievements\"
+        : {\n      \"points\" : {\n        \"totalPoints\" : 0,\n        \"categoryPoints\"
+        : {\n          \"4325382\" : 0,\n          \"4325380\" : 0,\n          \"4325408\"
+        : 0,\n          \"4325379\" : 0,\n          \"4325410\" : 0,\n          \"4325377\"
+        : 0\n        }\n      },\n      \"achievements\" : [ ]\n    }\n  } ]\n}"
+    http_version: 
+  recorded_at: Sun, 24 Aug 2014 00:39:09 GMT
+recorded_with: VCR 2.9.2

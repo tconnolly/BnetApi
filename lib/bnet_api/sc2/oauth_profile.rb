@@ -4,6 +4,7 @@ module BnetApi::SC2
     
     def get
       BnetApi.api = :sc2
+      json = BnetApi::Api.get("profile/user", true)
       
       @characters = Array.new
       
