@@ -1,9 +1,11 @@
 require 'json'
 require 'openssl'
-require 'open-uri'
+#require 'open-uri'
+require 'net/https'
 
 require 'bnet_api/api'
 require 'bnet_api/d3'
+require 'bnet_api/exception'
 require 'bnet_api/sc2'
 require 'bnet_api/wow'
 
@@ -18,7 +20,8 @@ module BnetApi
   
   # Application API key.
   attr_accessor :api_key
-  @@api_key = nil
+  # TODO: Remove my API key
+  @@api_key = :wnahbngtrs3maxkmya6ga8q5dvm78v23
   
   # Locale to use.
   # Available locales:
