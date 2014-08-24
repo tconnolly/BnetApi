@@ -215,4 +215,41 @@ http_interactions:
         }'
     http_version: 
   recorded_at: Sat, 23 Aug 2014 17:24:05 GMT
+- request:
+    method: get
+    uri: https://eu.api.battle.net/d3/profile/Ragwolf%232851/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 24 Aug 2014 20:16:50 GMT
+      Server:
+      - Mashery Proxy
+      X-Mashery-Error-Code:
+      - ERR_403_DEVELOPER_INACTIVE
+      X-Mashery-Responder:
+      - prod-j-worker-us-east-1c-37.mashery.com
+      Content-Length:
+      - '61'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"code":403, "type":"Forbidden", "detail":"Account Inactive"}'
+    http_version: 
+  recorded_at: Sun, 24 Aug 2014 20:16:50 GMT
 recorded_with: VCR 2.9.2

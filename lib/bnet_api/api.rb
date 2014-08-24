@@ -7,13 +7,17 @@ module BnetApi
       
       if oauth
         query = "?access_token=#{BnetApi.oauth_token}&locale=#{BnetApi.locale}"
-      else
+      elsif fields != nil
         query = self.build_query(fields)
+      else
+        if request_url.include?("?")
+          query = "&apikey=#{BnetApi.api_key}&locale=#{BnetApi.locale}"
+        else
+          query = "?apikey=#{BnetApi.api_key}&locale=#{BnetApi.locale}"
+        end
       end
       
-      if query == nil
-        query = ""
-      end
+      puts "Request: #{request_url}#{query}"
       
       uri = URI.parse(request_url + query)
       http = Net::HTTP.new(uri.host, uri.port)
@@ -25,7 +29,7 @@ module BnetApi
       return handle_response(request, response)
     end
 
-    def self.build_query(fields)
+    def self.build_query(fields = nil)
       if fields != nil
         return "?fields=#{fields[:fields]}&apikey=#{BnetApi.api_key}&locale=#{BnetApi.locale}"
       else

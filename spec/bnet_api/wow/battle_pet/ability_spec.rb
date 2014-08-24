@@ -10,6 +10,30 @@ describe BnetApi::WoW::BattlePet::Ability do
       ability.must_respond_to :cooldown
     end
     
+    it "must have an icon attribute" do
+      ability.must_respond_to :icon
+    end
+    
+    it "must have a hide hints attribute" do
+      ability.must_respond_to :hide_hints
+    end
+    
+    it "must have a is passive attibute" do
+      ability.must_respond_to :is_passive
+    end
+    
+    it "must have a name attribute" do
+      ability.must_respond_to :name
+    end
+    
+    it "must have a pet type id attribute" do
+      ability.must_respond_to :pet_type_id
+    end
+    
+    it "must have a rounds attribute" do
+      ability.must_respond_to :rounds
+    end
+    
   end
   
   describe "default instance methods" do
@@ -21,8 +45,8 @@ describe BnetApi::WoW::BattlePet::Ability do
     end
     
   end
-  
-  describe "GET guild" do
+
+  describe "GET ability" do
     
     let(:ability) { BnetApi::WoW::BattlePet::Ability.new(640) }
     
@@ -37,7 +61,14 @@ describe BnetApi::WoW::BattlePet::Ability do
     end
     
     it "must get the right ability" do
+      ability.cooldown.must_equal 0
+      ability.hide_hints.must_equal false
+      ability.icon.must_equal "spell_shadow_plaguecloud"
+      ability.id.must_equal 640
+      ability.is_passive.must_equal false
       ability.name.must_equal "Toxic Smoke"
+      ability.pet_type_id.must_equal 9
+      ability.rounds.must_equal 1
     end
     
     it "records the fixture" do
