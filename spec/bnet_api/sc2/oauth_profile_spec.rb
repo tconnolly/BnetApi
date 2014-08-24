@@ -1,10 +1,10 @@
-require_relative '../../../spec_helper'
+require_relative '../../spec_helper'
 
-describe BnetApi::WoW::OAuthProfile do
+describe BnetApi::SC2::OAuthProfile do
   
   describe "default instance attributes" do
     
-    let(:oauth_profile) { BnetApi::WoW::OAuthProfile.new }
+    let(:oauth_profile) { BnetApi::SC2::OAuthProfile.new }
     
     it "must have a characters attribute" do
       oauth_profile.must_respond_to :characters
@@ -14,7 +14,7 @@ describe BnetApi::WoW::OAuthProfile do
   
   describe "default instance methods" do
     
-    let(:oauth_profile) { BnetApi::WoW::OAuthProfile.new }
+    let(:oauth_profile) { BnetApi::SC2::OAuthProfile.new }
       
     it "must have a get method" do
       oauth_profile.must_respond_to :get
@@ -24,10 +24,10 @@ describe BnetApi::WoW::OAuthProfile do
   
   describe "GET oauth profile" do
     
-    let(:oauth_profile) { BnetApi::WoW::OAuthProfile.new }
+    let(:oauth_profile) { BnetApi::SC2::OAuthProfile.new }
     
     before do
-      VCR.insert_cassette "wow_oauth_profile", record: :new_episodes
+      VCR.insert_cassette "sc2_oauth_profile", record: :new_episodes
     end
     
     after do
@@ -43,7 +43,7 @@ describe BnetApi::WoW::OAuthProfile do
     
     it "records the fixture" do
       BnetApi.oauth_token = :nfpead9ubmch2f2g5xt4gxxh
-      o = BnetApi::WoW::OAuthProfile.new
+      o = BnetApi::SC2::OAuthProfile.new
       o.get
     end
   end

@@ -4,6 +4,7 @@ require 'open-uri'
 
 require 'bnet_api/api'
 require 'bnet_api/d3'
+require 'bnet_api/sc2'
 require 'bnet_api/wow'
 
 module BnetApi
