@@ -1,5 +1,4 @@
-module BnetApi::WoW
-  
+module BnetApi::WoW::CharacterProfile
   class Character
     attr_accessor :achievement_points,
                   :battlegroup,
