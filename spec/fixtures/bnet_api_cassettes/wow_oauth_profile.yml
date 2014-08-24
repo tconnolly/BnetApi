@@ -72,4 +72,106 @@ http_interactions:
         attacks to strike his opponents down.","order":0},"guild":"Banana Revolution","guildRealm":"Thunderhorn"}]}'
     http_version: 
   recorded_at: Sun, 24 Aug 2014 00:39:10 GMT
+- request:
+    method: get
+    uri: https://eu.api.battle.net/wow/user/characters?access_token=nfpead9ubmch2f2g5xt4gxxh&locale=en_GB
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "Q29udGVudC1MYW5ndWFnZQ==":
+      - !binary |-
+        ZW4tR0I=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjtjaGFyc2V0PVVURi04
+      !binary "RGF0ZQ==":
+      - !binary |-
+        U3VuLCAyNCBBdWcgMjAxNCAxOToxODo0NyBHTVQ=
+      !binary "U2VydmVy":
+      - !binary |-
+        QXBhY2hl
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "WC1NYXNoZXJ5LVJlc3BvbmRlcg==":
+      - !binary |-
+        cHJvZC1qLXdvcmtlci1jMy11cy1lYXN0LTFiLTAxLm1hc2hlcnkuY29t
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        MjE1NQ==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+    http_version: 
+  recorded_at: Sun, 24 Aug 2014 19:18:46 GMT
 recorded_with: VCR 2.9.2

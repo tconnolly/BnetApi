@@ -28,6 +28,9 @@ describe BnetApi::WoW::OAuthProfile do
     
     before do
       VCR.insert_cassette "wow_oauth_profile", record: :new_episodes
+      
+      BnetApi.oauth_token = :nfpead9ubmch2f2g5xt4gxxh
+      oauth_profile.get
     end
     
     after do
@@ -35,14 +38,10 @@ describe BnetApi::WoW::OAuthProfile do
     end
     
     it "must get the right oauth profile" do
-      BnetApi.oauth_token = :nfpead9ubmch2f2g5xt4gxxh
-      oauth_profile.get
-      
       oauth_profile.characters.wont_be_nil
     end
     
     it "records the fixture" do
-      BnetApi.oauth_token = :nfpead9ubmch2f2g5xt4gxxh
       o = BnetApi::WoW::OAuthProfile.new
       o.get
     end

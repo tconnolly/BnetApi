@@ -1,0 +1,117 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://eu.api.battle.net/wow/battlePet/ability/640?apikey=wnahbngtrs3maxkmya6ga8q5dvm78v23&locale=en_GB
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "Q29udGVudC1MYW5ndWFnZQ==":
+      - !binary |-
+        ZW4tR0I=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjtjaGFyc2V0PVVURi04
+      !binary "RGF0ZQ==":
+      - !binary |-
+        U3VuLCAyNCBBdWcgMjAxNCAxOToxNTo0MSBHTVQ=
+      !binary "U2VydmVy":
+      - !binary |-
+        QXBhY2hl
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "WC1NYXNoZXJ5LVJlc3BvbmRlcg==":
+      - !binary |-
+        cHJvZC1qLXdvcmtlci11cy1lYXN0LTFkLTM1Lm1hc2hlcnkuY29t
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        MTM1
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAy2NywoCMQwAf0Vy7kFBBPsFehPc+xKa6AazTTFbH4j/bg5e
+        h2HmA0KQd9t1goozQ4bBXlJW59luDAmkWA3ojVVHn5DsOTbFa+ei1imMYqZB
+        w4rG3Xolh7xJ0HgZ3o2Pkd9Hx0/oLo84XFCdE0xCfJC6+J98f8rFyzaLAAAA
+    http_version: 
+  recorded_at: Sun, 24 Aug 2014 19:15:41 GMT
+- request:
+    method: get
+    uri: https://eu.api.battle.net/wow/battlePet/ability/640?apikey=wnahbngtrs3maxkmya6ga8q5dvm78v23&locale=en_GB
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "Q29udGVudC1MYW5ndWFnZQ==":
+      - !binary |-
+        ZW4tR0I=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjtjaGFyc2V0PVVURi04
+      !binary "RGF0ZQ==":
+      - !binary |-
+        U3VuLCAyNCBBdWcgMjAxNCAxOToxNzo1MyBHTVQ=
+      !binary "U2VydmVy":
+      - !binary |-
+        QXBhY2hl
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "WC1NYXNoZXJ5LVJlc3BvbmRlcg==":
+      - !binary |-
+        cHJvZC1qLXdvcmtlci1jMy11cy1lYXN0LTFkLTAzLm1hc2hlcnkuY29t
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        MTM1
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAy2NywoCMQwAf0Vy7kFBBPsFehPc+xKa6AazTTFbH4j/bg5e
+        h2HmA0KQd9t1goozQ4bBXlJW59luDAmkWA3ojVVHn5DsOTbFa+ei1imMYqZB
+        w4rG3Xolh7xJ0HgZ3o2Pkd9Hx0/oLo84XFCdE0xCfJC6+J98f8rFyzaLAAAA
+    http_version: 
+  recorded_at: Sun, 24 Aug 2014 19:17:53 GMT
+recorded_with: VCR 2.9.2

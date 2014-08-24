@@ -126,7 +126,7 @@ module BnetApi::WoW
       @class_name
     end
     
-    # Constructor used in Bnet::WoW::Guild to create a character from a limited set of JSON attributes.
+    # Constructor used to create a character from a limited set of JSON attributes.
     #
     # @param json
     def self.new_from_json(json)
