@@ -1,5 +1,0 @@
-development:
-  api: <%= options.api %>
-  api_key: "TODO: Enter your API key"
-  locale: <%= options.locale %>
-  region: <%= options.region %>

@@ -21,11 +21,6 @@ module BnetApi
         @source_root ||= File.expand_path(File.join(File.dirname(__FILE__), "templates"))
       end
       
-      # Copy config file
-      def copy_config_file
-        template "bnet_api.yml", "config/bnet_api.yml"
-      end
-      
       # Copy initializer
       def copy_initializer
         template "bnet_api.rb", "config/initializers/bnet_api.rb"
