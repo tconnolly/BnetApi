@@ -15,7 +15,17 @@ module BnetApi
         query = ""
       end
       puts "Requesting: #{request_url}#{query}"
-      return JSON.parse(open(request_url + query, { ssl_verify_mode: OpenSSL::SSL::VERIFY_NONE }).read)
+      
+      response = nil
+      
+      begin
+        response = JSON.parse(open(request_url + query, { ssl_verify_mode: OpenSSL::SSL::VERIFY_NONE }).read)
+      rescue OpenURI::HTTPError => ex
+        response = JSON.parse(ex.io.readlines)
+        puts response
+      end
+      
+      return response
     end
 
     def self.build_query(fields)

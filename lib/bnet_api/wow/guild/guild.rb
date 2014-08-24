@@ -1,6 +1,6 @@
-module BnetApi
+module BnetApi::WoW
   class Guild
-    attr_accessor :achievementPoints,
+    attr_accessor :achievement_points,
                   :battlegroup,
                   :level,
                   :name,
@@ -17,8 +17,24 @@ module BnetApi
       1 => "Horde"
     }
     
-    def initialize(json)
-      @achievementPoints = json["achievementPoints"]
+    def initialize(realm, name)
+      @realm = realm
+      @name = name
+    end
+    
+    def get(*options)
+      BnetApi.api = :wow
+      
+      # Request all optional fields
+      if options.include? :all
+        fields = { :fields => "achievements,challenge,members,news" }
+      else
+        fields = { :fields => options.join(",") } unless options.empty?
+      end
+      
+      json = BnetApi::Api.get("guild/#{realm}/#{name}", nil, fields)
+      
+      @achievement_points = json["achievementPoints"]
       @battlegroup = json["battlegroup"]
       @level = json["level"]
       @members = Array.new
@@ -28,32 +44,23 @@ module BnetApi
       # Optional fields
       @achievements = json["achievements"]
       @challenge = json["challenge"]
-      @news = GuildNews.new(json["news"])
+      #@news = GuildNews.new(json["news"])
       
       members = json["members"]
       
       if members != nil
         members.each do |member|
-          character = Character.new(member["character"])
+          character = BnetApi::WoW::Character.new_from_guild(member["character"])
           character.rank = member["rank"]
           # Check character has a spec
           if member["character"]["spec"] != nil
-            character.spec = Spec.new(member["character"]["spec"])
+            #character.spec = Spec.new(member["character"]["spec"])
           end
           @members.push(character)
         end
       end
-    end
-    
-    def self.find_by_realm_and_name(realm, name, *options)
-      # Request all optional fields
-      if options.include? :all
-        fields = { :fields => "achievements,challenge,members,news" }
-      else
-        fields = { :fields => options.join(",") } unless options.empty?
-      end
       
-      return Guild.new(ApiConnection.get("guild/#{realm}/#{name}", fields))
+      self
     end
   end
 end

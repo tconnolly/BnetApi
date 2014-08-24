@@ -11,7 +11,14 @@ module BnetApi::WoW
                   :accountWide,
                   :factionId
     
-    def initialize(json)
+    def initialize(id)
+      @id = id
+    end
+    
+    def get
+      BnetApi.api = :wow
+      json = BnetApi::Api.get("achievement/#{@id}")
+      
       @id = json["id"]
       @title = json["title"]
       @points = json["points"]
@@ -22,11 +29,9 @@ module BnetApi::WoW
       @criteria = json["criteria"]
       @accountWide = json["accountWide"]
       @factionId = json["factionId"]
+      
+      self
     end
-    
-    def self.find_by_id(id)
-      BnetApi.api = :wow
-      return Achievement.new(BnetApi::Api.get("achievement/#{id}"))
-    end
+
   end
 end
