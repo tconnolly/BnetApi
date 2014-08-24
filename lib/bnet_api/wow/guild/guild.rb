@@ -50,7 +50,7 @@ module BnetApi::WoW
       
       if members != nil
         members.each do |member|
-          character = BnetApi::WoW::Character.new_from_guild(member["character"])
+          character = BnetApi::WoW::Character.new_from_json(member["character"])
           character.rank = member["rank"]
           # Check character has a spec
           if member["character"]["spec"] != nil

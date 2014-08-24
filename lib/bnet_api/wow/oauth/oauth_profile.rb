@@ -9,7 +9,7 @@ module BnetApi::WoW
       @characters = Array.new
       
       json["characters"].each do |character|
-        @characters.push(BnetApi::WoW::Character.new(character))
+        @characters.push(BnetApi::WoW::Character.new_from_json(character))
       end
     end
   end

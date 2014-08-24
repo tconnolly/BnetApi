@@ -126,10 +126,10 @@ module BnetApi::WoW
       @class_name
     end
     
-    # Constructure used in Bnet::WoW::Guild to create a character from a limited set of JSON attributes.
+    # Constructor used in Bnet::WoW::Guild to create a character from a limited set of JSON attributes.
     #
     # @param json
-    def self.new_from_guild(json)
+    def self.new_from_json(json)
       c = Character.new(json["realm"], json["name"])      
       
       c.achievement_points = json["achievementPoints"]
