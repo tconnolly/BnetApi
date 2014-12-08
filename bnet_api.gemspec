@@ -21,6 +21,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'httparty', '0.13.3'
 
   spec.add_development_dependency 'bundler'
-  spec.add_development_dependency 'rake'
   spec.add_development_dependency 'rspec'
 end
