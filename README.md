@@ -39,14 +39,14 @@ Regions:
 
 Locales:
 
-|----------|----------|
-| Region   | Locales  |
-|----------|----------|
-| us       | en_US, es_MX, pt_BR |
-| eu       | en_GB, es_ES, fr_FR, ru_RU, de_DE, pl_PL, pt_PT, it_IT |
-| kr       | ko_KR    |
-| tw       | zh_TW    |
-|----------|----------|
+
+Region   | Locales  
+---------|----------
+us       | en_US, es_MX, pt_BR 
+eu       | en_GB, es_ES, fr_FR, ru_RU, de_DE, pl_PL, pt_PT, it_IT 
+kr       | ko_KR    
+tw       | zh_TW
+
 
 ## Examples
 
