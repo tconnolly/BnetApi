@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["tconnolly1991@gmail.com"]
   spec.summary       = %q{Ruby wrapper for the Battle.net web API.}
   spec.description   = %q{Ruby wrapper for the Battle.net web API. For more info visit https://dev.battle.net}
-  spec.homepage      = "https://github.com/tconnolly/bnet-api"
+  spec.homepage      = "https://github.com/tconnolly/bnetapi"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
