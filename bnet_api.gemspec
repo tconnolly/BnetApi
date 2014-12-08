@@ -1,30 +1,28 @@
-$:.push File.expand_path("../lib", __FILE__)
+# coding: utf-8
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'bnet_api/version'
 
-# Maintain your gem's version:
-require "bnet_api/version"
+Gem::Specification.new do |spec|
+  spec.name          = "omniauth-bnet"
+  spec.version       = BnetApi::VERSION
+  spec.authors       = ["Tom Connolly"]
+  spec.email         = ["tconnolly1991@gmail.com"]
+  spec.summary       = %q{Ruby wrapper for the Battle.net web API.}
+  spec.description   = %q{Ruby wrapper for the Battle.net web API. For more info visit https://dev.battle.net}
+  spec.homepage      = "https://github.com/tconnolly/bnet-api"
+  spec.license       = "MIT"
 
-# Describe your gem and declare its dependencies:
-Gem::Specification.new do |s|
-  s.name        = "bnet_api"
-  s.version     = BnetApi::VERSION
-  s.authors     = ["Tom Connolly"]
-  s.email       = ["tom@tconnolly.co.uk"]
-  s.homepage    = "http://github.com/tconnolly/bnetapi"
-  s.summary     = %q{Battle.net API wrapper}
-  s.description = %q{Wrapper for Blizzard's Battle.net API}
-  s.license     = "MIT"
+  spec.files         = `git ls-files -z`.split("\x0")
+  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
+  spec.require_paths = ["lib"]
 
-  s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
-  s.require_paths = ["lib"]
-  
-  s.add_dependency "certified"
-  
-  s.add_development_dependency "rake"
-  s.add_development_dependency "rspec"
-  s.add_development_dependency "turn"
-  s.add_development_dependency "vcr"
-  s.add_development_dependency "webmock"
-  s.add_development_dependency "win32console"
+  spec.add_dependency 'httparty'
+  spec.add_dependency 'omniauth'
+  spec.add_dependency 'omniauth-bnet'
+
+  spec.add_development_dependency 'bundler'
+  spec.add_development_dependency 'rake'
+  spec.add_development_dependency 'rspec'
 end

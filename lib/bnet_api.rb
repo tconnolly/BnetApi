@@ -1,104 +1,54 @@
-require 'json'
-require 'openssl'
-#require 'open-uri'
-require 'net/https'
-
-require 'bnet_api/api'
-require 'bnet_api/d3'
-require 'bnet_api/exception'
-require 'bnet_api/sc2'
 require 'bnet_api/wow'
+require 'bnet_api/wow_data'
+require 'bnet_api/version'
+
+require 'httparty'
+require 'ostruct'
 
 module BnetApi
   extend self
-  # API to use.
-  # Set to "wow" for World of Warcraft API
-  # Set to "d3" for Diablo 3 API
-  # Set to "sc2" for Starcraft 2 API
-  attr_accessor :api
-  @@api = :wow
-  
-  # Application API key.
-  attr_accessor :api_key
-  @@api_key = ENV["BNET_API_KEY"]
-  
-  # Locale to use.
-  # Available locales:
-  # Region: US
-  #   en_US
-  #   en_MX
-  #   pt_BR
-  # Region: EU
-  #   en_GB
-  #   es_ES
-  #   fr_FR
-  #   ru_RU
-  #   de_DE
-  #   pt_PT
-  #   it_IT
-  # Region: KR
-  #   ko_KR
-  # Region: TW
-  #   zh_TW
-  # Region: CN
-  #   zh_CN
-  attr_accessor :locale
-  @@locale = :en_GB
-  
-  # OAuth token to use for OAuth profile APIs.
-  @@oauth_token = nil
-  
-  # Region to use.
-  # Available regions:
-  #   US
-  #   EU
-  #   KR
-  #   TW
-  #   CN
-  attr_accessor :region
-  @@region = :eu
-  
-  def self.api
-    @@api
+  include HTTParty
+
+  def configure
+    yield config
   end
-  
-  def self.api=(api)
-    @@api = api
+
+  def config
+    @config ||= OpenStruct.new(region: :eu, locale: :en_GB)
   end
-  
-  def self.api_key
-    @@api_key
+
+  def make_request(request, *optional_fields)
+    response = self.get("https://#{@config.region}.api.battle.net/#{request}#{build_url_params(optional_fields)}")
+    if response["class"] != nil
+      response["classId"] = response["class"]
+      response.delete("class")
+    end
+    
+    return response
   end
-  
-  def self.api_key=(api_key)
-    @@api_key = api_key
+
+  def make_request_with_params(request, params)
+    url = "https://#{@config.region}.api.battle.net/#{request}?"
+    params.each do |k, v|
+      url += "#{k}=#{v}&"
+    end
+    url += "locale=#{@config.locale}&apikey=#{@config.api_key}"
+
+    response = self.get(url)
+    if response["class"] != nil
+      response["classId"] = response["class"]
+      response.delete("class")
+    end
+
+    return response
   end
-  
-  def self.locale
-    @@locale
-  end
-  
-  def self.locale=(locale)
-    @@locale = locale
-  end
-  
-  def self.oauth_token
-    @@oauth_token
-  end
-  
-  def self.oauth_token=(oauth_token)
-    @@oauth_token = oauth_token
-  end
-  
-  def self.region
-    @@region
-  end
-  
-  def self.region=(region)
-    @@region = region
-  end
-  
-  def self.configure
-    yield self
-  end
+
+  private
+    def build_url_params(*optional_fields)
+      url_params = "?locale=#{@config.locale}&apikey=#{@config.api_key}"
+      if optional_fields != nil
+        url_params += "&fields=#{optional_fields.join(',')}"
+      end
+      return url_params
+    end
 end
