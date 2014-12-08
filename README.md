@@ -1,5 +1,7 @@
 # BnetApi
 
+[![Gem Version](https://badge.fury.io/rb/bnet_api.svg)](http://badge.fury.io/rb/bnet_api)
+
 A Ruby wrapper for the Battle.net API
 
 ## Installation
