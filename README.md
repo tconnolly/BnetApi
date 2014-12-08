@@ -2,6 +2,9 @@
 
 [![Gem Version](https://badge.fury.io/rb/bnet_api.svg)](http://badge.fury.io/rb/bnet_api)
 [![Build Status](https://travis-ci.org/tconnolly/BnetApi.svg?branch=master)](https://travis-ci.org/tconnolly/BnetApi)
+[![Code Climate](https://codeclimate.com/github/tconnolly/BnetApi/badges/gpa.svg)](https://codeclimate.com/github/tconnolly/BnetApi)
+[![Coverage Status](https://coveralls.io/repos/tconnolly/BnetApi/badge.png?branch=master)](https://coveralls.io/r/tconnolly/BnetApi?branch=master)
+[![Inline docs](http://inch-ci.org/github/tconnolly/bnetapi.svg?branch=master)](http://inch-ci.org/github/tconnolly/bnetapi)
 
 A Ruby wrapper for the Battle.net API
 
