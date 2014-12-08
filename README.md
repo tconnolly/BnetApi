@@ -16,7 +16,7 @@ Starcraft II      | Not implemented
 
 ## Installation
 
-TODO
+	gem install bnet_api
 
 ## Configuration
 
