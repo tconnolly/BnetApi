@@ -4,6 +4,16 @@
 
 A Ruby wrapper for the Battle.net API
 
+## Current Version: 0.1.1
+
+### Status
+
+        API       | Status
+------------------|-----------------
+World of Warcraft | Implemented
+Diablo III        | Not implemented
+Starcraft II      | Not implemented
+
 ## Installation
 
 TODO
