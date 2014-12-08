@@ -1,6 +1,7 @@
 # BnetApi
 
 [![Gem Version](https://badge.fury.io/rb/bnet_api.svg)](http://badge.fury.io/rb/bnet_api)
+[![Build Status](https://travis-ci.org/tconnolly/BnetApi.svg?branch=master)](https://travis-ci.org/tconnolly/BnetApi)
 
 A Ruby wrapper for the Battle.net API
 
