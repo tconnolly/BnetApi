@@ -30,15 +30,14 @@ BnetApi.configure do |config|
 end
 ```
 
-Regions:
+### Regions
 
-* :us
-* :eu
-* :kr
-* :tw
+* us
+* eu
+* kr
+* tw
 
-Locales:
-
+### Locales
 
 Region   | Locales  
 ---------|----------
@@ -163,22 +162,22 @@ BnetApi::WoW.character('Thunderhorn', 'Ragwolf', :all)
 
 Available optional fields:
 
-* :achievements
-* :appearance
-* :feed
-* :guild
-* :items
-* :mounts
-* :pets
-* :petSlots
-* :progression
-* :pvp
-* :quests
-* :reputation
-* :stats
-* :talents
-* :titles
-* :audit
+* achievements
+* appearance
+* feed
+* guild
+* items
+* mounts
+* pets
+* petSlots
+* progression
+* pvp
+* quests
+* reputation
+* stats
+* talents
+* titles
+* audit
 
 ### Guild API
 
@@ -202,10 +201,10 @@ BnetApi::WoW.guild('Thunderhorn', 'Banana Revolution', :all)
 
 Available optional fields:
 
-* :members
-* :achievements
-* :news
-* :challenge
+* members
+* achievements
+* news
+* challenge
 
 ### Item API
 
