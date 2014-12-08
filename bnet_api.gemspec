@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'bnet_api/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "omniauth-bnet"
+  spec.name          = "bnet_api"
   spec.version       = BnetApi::VERSION
   spec.authors       = ["Tom Connolly"]
   spec.email         = ["tconnolly1991@gmail.com"]
@@ -18,9 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_dependency 'httparty'
-  spec.add_dependency 'omniauth'
-  spec.add_dependency 'omniauth-bnet'
+  spec.add_dependency 'httparty', '0.13.3'
 
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'rake'
