@@ -63,7 +63,7 @@ tw       | zh_TW
 
 Each API method returns a hash containing the values returned from the API.
 
-For more detailed documentation visit the official documentation (https://dev.battle.net).
+For more detailed documentation on returned data visit the official documentation (https://dev.battle.net).
 
 ### Achievement API
 
