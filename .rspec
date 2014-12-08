@@ -1,3 +1,2 @@
---format progress
---format html
---out rspec_results.html
+--color
+--order random
