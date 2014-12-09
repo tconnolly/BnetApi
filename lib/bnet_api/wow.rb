@@ -72,7 +72,7 @@ module BnetApi
     end
 
     def realm_status(*realms)
-      if realms != nil
+      if realms.count > 0
         BnetApi.make_request_with_params("/wow/realm/status", { realms: realms.join(',') })
       else
         BnetApi.make_request("/wow/realm/status")
