@@ -1,5 +1,6 @@
 require 'bnet_api/d3'
 require 'bnet_api/oauth'
+require 'bnet_api/sc2'
 require 'bnet_api/wow'
 require 'bnet_api/wow_data'
 require 'bnet_api/version'
