@@ -1,5 +1,44 @@
 # BnetApi
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [BnetApi](#bnetapi)
+  - [Current Version: 0.1.2](#current-version-012)
+    - [Status](#status)
+  - [Installation](#installation)
+  - [Configuration](#configuration)
+    - [Regions](#regions)
+    - [Locales](#locales)
+  - [Examples](#examples)
+    - [Achievement API](#achievement-api)
+    - [Auction Data API](#auction-data-api)
+      - [Sample Request](#sample-request)
+      - [Sample Response](#sample-response)
+    - [Battlepet API](#battlepet-api)
+      - [Battlepet Abilities](#battlepet-abilities)
+      - [Battlepet Species](#battlepet-species)
+      - [Battlepet Stats](#battlepet-stats)
+    - [Challenge Mode API](#challenge-mode-api)
+      - [Realm](#realm)
+      - [Region](#region)
+    - [Character Profile API](#character-profile-api)
+    - [Guild API](#guild-api)
+    - [Item API](#item-api)
+    - [PvP API](#pvp-api)
+    - [Quest API](#quest-api)
+    - [Realm Status API](#realm-status-api)
+    - [Recipe API](#recipe-api)
+    - [Spell API](#spell-api)
+    - [OAuth APIs](#oauth-apis)
+      - [Account ID](#account-id)
+      - [Battletag](#battletag)
+      - [Starcraft II Profile](#starcraft-ii-profile)
+      - [World of Warcraft Profile](#world-of-warcraft-profile)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 [![Gem Version](https://badge.fury.io/rb/bnet_api.svg)](http://badge.fury.io/rb/bnet_api)
 [![Build Status](https://travis-ci.org/tconnolly/BnetApi.svg?branch=master)](https://travis-ci.org/tconnolly/BnetApi)
 [![Code Climate](https://codeclimate.com/github/tconnolly/BnetApi/badges/gpa.svg)](https://codeclimate.com/github/tconnolly/BnetApi)
