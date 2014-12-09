@@ -8,6 +8,7 @@ require 'bnet_api/version'
 require 'httparty'
 require 'ostruct'
 
+# The base module namespace for the BnetApi library.
 module BnetApi
   extend self
   include HTTParty
