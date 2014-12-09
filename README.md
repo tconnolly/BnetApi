@@ -8,23 +8,23 @@
 
 A Ruby wrapper for the Battle.net API
 
-## Current Version: 0.1.2
+## Current Version: 0.1.3
 
 ### Status
 
         API       | Status
 ------------------|-----------------
 World of Warcraft | Implemented
-Diablo III        | Not implemented
+Diablo III        | Implemented
 Starcraft II      | Not implemented
-OAuth			  | Implemented
+OAuth			        | Implemented
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
 
 - [BnetApi](#bnetapi)
-  - [Current Version: 0.1.2](#current-version-012)
+  - [Current Version: 0.1.3](#current-version-013)
     - [Status](#status)
   - [Installation](#installation)
   - [Configuration](#configuration)
