@@ -1,3 +1,4 @@
+require 'bnet_api/oauth'
 require 'bnet_api/wow'
 require 'bnet_api/wow_data'
 require 'bnet_api/version'
@@ -41,6 +42,10 @@ module BnetApi
     end
 
     return response
+  end
+
+  def make_request_oauth(request, access_token)
+    self.get("https://#{@config.region}.api.battle.net/#{request}?locale=#{@config.locale}&access_token=#{access_token}")
   end
 
   private
