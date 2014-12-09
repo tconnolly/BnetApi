@@ -9,6 +9,26 @@ describe BnetApi::SC2 do
     end
   end
 
+  # TODO: Implement test correctly
+  it "gets a profile from the API" do
+    profile = BnetApi::SC2.profile(123, 12345, 'TODO')
+  end
+
+  # TODO: Implement test correctly
+  it "gets a profile's ladders from the API" do
+    ladders = BnetApi::SC2.profile_ladders(123, 12345, 'TODO')
+  end
+
+  # TODO: Implement test correctly
+  it "gets a profile's match history from the API" do
+    history = BnetApi::SC2.match_history(123, 12345, 'TODO')
+  end
+
+  # TODO: Implement test correctly
+  it "gets a ladder from the API" do
+    ladder = BnetApi::SC2.ladder(12345)
+  end
+
   it "gets achievements data from the API" do
     achievements = BnetApi::SC2.achievements_data
 
