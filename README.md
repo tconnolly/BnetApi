@@ -8,7 +8,7 @@
 
 A Ruby wrapper for the Battle.net API
 
-## Current Version: 0.1.1
+## Current Version: 0.1.2
 
 ### Status
 
@@ -17,7 +17,7 @@ A Ruby wrapper for the Battle.net API
 World of Warcraft | Implemented
 Diablo III        | Not implemented
 Starcraft II      | Not implemented
-OAuth			  | Not implemented
+OAuth			  | Implemented
 
 ## Installation
 
