@@ -1,3 +1,4 @@
+require 'bnet_api/d3'
 require 'bnet_api/oauth'
 require 'bnet_api/wow'
 require 'bnet_api/wow_data'
@@ -19,13 +20,7 @@ module BnetApi
   end
 
   def make_request(request, *optional_fields)
-    response = self.get("https://#{@config.region}.api.battle.net/#{request}#{build_url_params(optional_fields)}")
-    if response["class"] != nil
-      response["classId"] = response["class"]
-      response.delete("class")
-    end
-    
-    return response
+    self.get("https://#{@config.region}.api.battle.net/#{request}#{build_url_params(optional_fields)}")
   end
 
   def make_request_with_params(request, params)
@@ -35,13 +30,7 @@ module BnetApi
     end
     url += "locale=#{@config.locale}&apikey=#{@config.api_key}"
 
-    response = self.get(url)
-    if response["class"] != nil
-      response["classId"] = response["class"]
-      response.delete("class")
-    end
-
-    return response
+    self.get(url)
   end
 
   def make_request_oauth(request, access_token)

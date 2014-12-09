@@ -18,7 +18,7 @@ describe BnetApi::WoW do
     expect(character['name']).to eq('Ragwolf')
     expect(character['realm']).to eq('Thunderhorn')
     expect(character['battlegroup']).to eq('Misery')
-    expect(character['classId']).to eq(8)
+    expect(character['class']).to eq(8)
     expect(character['race']).to eq(5)
     expect(character['gender']).to eq(1)
     expect(character['level']).to eq(100)
