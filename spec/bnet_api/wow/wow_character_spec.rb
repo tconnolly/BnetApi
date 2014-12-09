@@ -14,8 +14,6 @@ describe BnetApi::WoW do
   it "gets a character from the API" do
     character = BnetApi::WoW.character('Thunderhorn', 'Ragwolf')
 
-    puts character
-
     expect(character['lastModified']).not_to be_nil
     expect(character['name']).to eq('Ragwolf')
     expect(character['realm']).to eq('Thunderhorn')
