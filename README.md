@@ -63,7 +63,6 @@ eu       | en_GB, es_ES, fr_FR, ru_RU, de_DE, pl_PL, pt_PT, it_IT
 kr       | ko_KR    
 tw       | zh_TW
 
-
 ## Usage
 
 Documentation can be found in the [wiki](https://github.com/tconnolly/BnetApi/wiki)
