@@ -8,8 +8,6 @@
 
 A Ruby wrapper for the Battle.net API.
 
-## Current Version: 0.1.4
-
 ## Installation
 
 	gem install bnet_api
