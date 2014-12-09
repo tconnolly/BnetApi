@@ -1,5 +1,24 @@
 # BnetApi
 
+[![Gem Version](https://badge.fury.io/rb/bnet_api.svg)](http://badge.fury.io/rb/bnet_api)
+[![Build Status](https://travis-ci.org/tconnolly/BnetApi.svg?branch=master)](https://travis-ci.org/tconnolly/BnetApi)
+[![Code Climate](https://codeclimate.com/github/tconnolly/BnetApi/badges/gpa.svg)](https://codeclimate.com/github/tconnolly/BnetApi)
+[![Coverage Status](https://coveralls.io/repos/tconnolly/BnetApi/badge.png?branch=master)](https://coveralls.io/r/tconnolly/BnetApi?branch=master
+)[![Inline docs](http://inch-ci.org/github/tconnolly/bnetapi.svg?branch=master)](http://inch-ci.org/github/tconnolly/bnetapi)
+
+A Ruby wrapper for the Battle.net API
+
+## Current Version: 0.1.2
+
+### Status
+
+        API       | Status
+------------------|-----------------
+World of Warcraft | Implemented
+Diablo III        | Not implemented
+Starcraft II      | Not implemented
+OAuth			  | Implemented
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
@@ -38,25 +57,6 @@
       - [World of Warcraft Profile](#world-of-warcraft-profile)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-[![Gem Version](https://badge.fury.io/rb/bnet_api.svg)](http://badge.fury.io/rb/bnet_api)
-[![Build Status](https://travis-ci.org/tconnolly/BnetApi.svg?branch=master)](https://travis-ci.org/tconnolly/BnetApi)
-[![Code Climate](https://codeclimate.com/github/tconnolly/BnetApi/badges/gpa.svg)](https://codeclimate.com/github/tconnolly/BnetApi)
-[![Coverage Status](https://coveralls.io/repos/tconnolly/BnetApi/badge.png?branch=master)](https://coveralls.io/r/tconnolly/BnetApi?branch=master
-)[![Inline docs](http://inch-ci.org/github/tconnolly/bnetapi.svg?branch=master)](http://inch-ci.org/github/tconnolly/bnetapi)
-
-A Ruby wrapper for the Battle.net API
-
-## Current Version: 0.1.2
-
-### Status
-
-        API       | Status
-------------------|-----------------
-World of Warcraft | Implemented
-Diablo III        | Not implemented
-Starcraft II      | Not implemented
-OAuth			  | Implemented
 
 ## Installation
 
