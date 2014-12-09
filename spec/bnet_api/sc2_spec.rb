@@ -9,24 +9,40 @@ describe BnetApi::SC2 do
     end
   end
 
-  # TODO: Implement test correctly
   it "gets a profile from the API" do
-    profile = BnetApi::SC2.profile(123, 12345, 'TODO')
+    profile = BnetApi::SC2.profile(4587449, 1, 'Ragwolf')
+
+    expect(profile['id']).to eq 4587449
+    expect(profile['realm']).to eq 1
+    expect(profile['displayName']).to eq 'Ragwolf'
+    expect(profile['profilePath']).to eq '/profile/4587449/1/Ragwolf/'
+    expect(profile['portrait']).not_to be_nil
+    expect(profile['career']).not_to be_nil
+    expect(profile['swarmLevels']).not_to be_nil
+    expect(profile['campaign']).not_to be_nil
+    expect(profile['season']).not_to be_nil
+    expect(profile['rewards']).not_to be_nil
+    expect(profile['achievements']).not_to be_nil
   end
 
-  # TODO: Implement test correctly
   it "gets a profile's ladders from the API" do
-    ladders = BnetApi::SC2.profile_ladders(123, 12345, 'TODO')
+    ladders = BnetApi::SC2.profile_ladders(4587449, 1, 'Ragwolf')
+
+    expect(ladders['currentSeason']).not_to be_nil
+    expect(ladders['previousSeason']).not_to be_nil
+    expect(ladders['showcasePlacement']).not_to be_nil
   end
 
-  # TODO: Implement test correctly
   it "gets a profile's match history from the API" do
-    history = BnetApi::SC2.match_history(123, 12345, 'TODO')
+    history = BnetApi::SC2.match_history(4587449, 1, 'Ragwolf')
+
+    expect(history['matches']).not_to be_nil
   end
 
-  # TODO: Implement test correctly
   it "gets a ladder from the API" do
-    ladder = BnetApi::SC2.ladder(12345)
+    ladder = BnetApi::SC2.ladder('grandmaster')
+
+    expect(ladder['ladderMembers']).not_to be_nil
   end
 
   it "gets achievements data from the API" do
