@@ -85,7 +85,7 @@ The Auction Data API returns the URL of a JSON file containing an auction data d
 #### Sample Request
 
 ```ruby
-BnetApi::WoW.auction_data('Thunderhorn')
+BnetApi::WoW.auction_data('REALM')
 ```
 
 #### Sample Response
@@ -146,7 +146,7 @@ BnetApi::WoW.battlepet_stats(258, level: 25, breedId: 5, qualityId: 4)
 To get the challenge mode leaderboard for a realm:
 
 ```ruby
-BnetApi::WoW.challenge_mode_realm('Thunderhorn')
+BnetApi::WoW.challenge_mode_realm('REALM')
 ```
 
 #### Region
@@ -162,19 +162,19 @@ BnetApi::WoW.challenge_mode_region
 To get the basic data for a character:
 
 ```ruby
-BnetApi::WoW.character('Thunderhorn', 'Ragwolf')
+BnetApi::WoW.character('REALM', 'CHARACTER_NAME')
 ```
 
 To get any additional data fields, pass them in as extra symbol values:
 
 ```ruby
-BnetApi::WoW.character('Thunderhorn', 'Ragwolf', :achievements, :quests)
+BnetApi::WoW.character('REALM', 'CHARACTER_NAME', :achievements, :quests)
 ```
 
 To get all additional data fields, pass in :all as the extra parameter:
 
 ```ruby
-BnetApi::WoW.character('Thunderhorn', 'Ragwolf', :all)
+BnetApi::WoW.character('REALM', 'CHARACTER_NAME', :all)
 ```
 
 Available optional fields:
@@ -201,19 +201,19 @@ Available optional fields:
 To get the basic data for a guild:
 
 ```ruby
-BnetApi::WoW.guild('Thunderhorn', 'Banana Revolution')
+BnetApi::WoW.guild('REALM', 'GUILD_NAME')
 ```
 
 To get any additional data fields, pass them in as extra symbol values:
 
 ```ruby
-BnetApi::WoW.guild('Thunderhorn', 'Banana Revolution', :news, :achievements)
+BnetApi::WoW.guild('REALM', 'GUILD_NAME', :news, :achievements)
 ```
 
 To get all additional data fields, pass in :all as the extra parameter:
 
 ```ruby
-BnetApi::WoW.guild('Thunderhorn', 'Banana Revolution', :all)
+BnetApi::WoW.guild('REALM', 'GUILD_NAME', :all)
 ```
 
 Available optional fields:
@@ -282,4 +282,40 @@ To get the data for a spell:
 
 ```ruby
 BnetApi::WoW.spell(8056)
+```
+
+### OAuth APIs
+
+This library isn't concerned with the OAuth authentication, just retrieving data from the API.
+
+You can use the [OmniAuth Bnet](https://github.com/Blizzard/omniauth-bnet) or any other OAuth library to authenticate against the Battle.net OAuth service, and then just pass the user's OAuth Access Token to the OAuth API methods.
+
+#### Account ID
+
+To get the user's account ID:
+
+```ruby
+BnetApi::OAuth.account_id('ACCESS_TOKEN')
+```
+
+#### Battletag
+
+To get the user's battletag:
+
+```ruby
+BnetApi::OAuth.battletag('ACCESS_TOKEN')
+```
+
+#### Starcraft II Profile
+
+To get the user's Starcraft II profile:
+
+```ruby
+BnetApi::OAuth.sc2_profile('ACCESS_TOKEN')
+```
+
+#### World of Warcraft Profile
+
+```ruby
+BnetApi::OAuth.wow_profile('ACCESS_TOKEN')
 ```
