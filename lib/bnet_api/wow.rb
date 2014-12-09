@@ -1,6 +1,7 @@
 require 'uri'
 
 module BnetApi
+  # All API methods relating to World of Warcraft are contained in this module.
   module WoW
     extend self
 

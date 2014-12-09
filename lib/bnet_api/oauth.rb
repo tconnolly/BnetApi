@@ -1,4 +1,5 @@
 module BnetApi
+  # All API methods requiring OAuth authentication are contained in this module.
   module OAuth
     extend self
 
