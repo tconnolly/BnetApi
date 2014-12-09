@@ -6,8 +6,8 @@ describe BnetApi::WoW do
 
   before :each do
     BnetApi.configure do |config|
-      config.api_key = ENV['BNET_ID']
-      config.api_secret = ENV['BNET_SECRET']
+      config.api_key = ENV['BNET_API_KEY']
+      config.api_secret = ENV['BNET_API_SECRET']
     end
   end
 
@@ -98,7 +98,7 @@ describe BnetApi::WoW do
     expect(character['quests']).not_to be_nil
   end
 
-  it "gets a character from the API with itemsreputation" do
+  it "gets a character from the API with reputation data" do
     character = BnetApi::WoW.character('Thunderhorn', 'Ragwolf', :reputation)
 
     expect(character['reputation']).not_to be_nil

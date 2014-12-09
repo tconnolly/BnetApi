@@ -4,8 +4,8 @@ describe BnetApi::OAuth do
 
   before :each do
     BnetApi.configure do |config|
-      config.api_key = ENV['BNET_ID']
-      config.api_secret = ENV['BNET_SECRET']
+      config.api_key = ENV['BNET_API_KEY']
+      config.api_secret = ENV['BNET_API_SECRET']
     end
   end
 
