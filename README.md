@@ -6,18 +6,9 @@
 [![Coverage Status](https://coveralls.io/repos/tconnolly/BnetApi/badge.png?branch=master)](https://coveralls.io/r/tconnolly/BnetApi?branch=master
 )[![Inline docs](http://inch-ci.org/github/tconnolly/bnetapi.svg?branch=master)](http://inch-ci.org/github/tconnolly/bnetapi)
 
-A Ruby wrapper for the Battle.net API
+A Ruby wrapper for the Battle.net API.
 
-## Current Version: 0.1.3
-
-### Status
-
-        API       | Status
-------------------|-----------------
-World of Warcraft | Implemented
-Diablo III        | Implemented
-Starcraft II      | Not implemented
-OAuth			        | Implemented
+## Current Version: 0.1.4
 
 ## Installation
 
