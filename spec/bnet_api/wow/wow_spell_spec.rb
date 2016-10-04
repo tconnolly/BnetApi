@@ -13,7 +13,7 @@ describe BnetApi::WoW do
     spell = BnetApi::WoW.spell(8056)
 
     expect(spell['id']).to eq 8056
-    expect(spell['name']).to eq 'Frost Shock'
+    expect(spell['name']).to eq 'zzOldFrost Shock'
     expect(spell['icon']).to eq 'spell_frost_frostshock'
     expect(spell['description']).not_to be_nil
     expect(spell['range']).to eq '25 yd range'
