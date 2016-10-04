@@ -1,3 +1,11 @@
+# 1.0.2
+
+* Removed development dependencies from gemspec
+
+# 1.0.1
+
+* Added required ruby version to gemspec
+
 # 1.0.0
 
 * Require Ruby >= 2.0.0

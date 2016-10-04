@@ -21,7 +21,4 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency 'httparty', '0.14.0'
-
-  spec.add_development_dependency 'bundler'
-  spec.add_development_dependency 'rspec'
 end
