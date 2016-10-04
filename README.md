@@ -12,6 +12,10 @@ A Ruby wrapper for the Battle.net API.
 
 	gem install bnet_api
 
+## Requirements
+
+* Ruby 2.0.0 or higher
+
 ## Configuration
 
 You need to set at least the Battle.net API key in the configuration, either in the code or in an initializer.
