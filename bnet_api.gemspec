@@ -12,6 +12,8 @@ Gem::Specification.new do |spec|
   spec.description   = %q{Ruby wrapper for the Battle.net web API. For more info visit https://dev.battle.net}
   spec.homepage      = "https://github.com/tconnolly/bnetapi"
   spec.license       = "MIT"
+  
+  spec.required_ruby_version = '>= 2.0.0'
 
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
