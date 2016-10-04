@@ -1,3 +1,7 @@
+# 1.0.0
+
+* Updated old WoW Battlepet APIs to use new Pet APIs
+
 # 0.1.4
 
 * Added Starcraft II APIs

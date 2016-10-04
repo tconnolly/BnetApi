@@ -8,9 +8,15 @@ describe BnetApi::WoW do
       config.api_secret = ENV['BNET_API_SECRET']
     end
   end
+  
+  it "gets a list of all pets from the api" do
+    master_list = BnetApi::WoW.pet_master_list
+    
+    expect(master_list['pets']).not_to be_nil
+  end
 
-  it "gets a battlepet ability from the API" do
-    ability = BnetApi::WoW.battlepet_ability(640)
+  it "gets a pet ability from the API" do
+    ability = BnetApi::WoW.pet_ability(640)
 
     expect(ability['id']).to eq 640
     expect(ability['name']).to eq 'Toxic Smoke'
@@ -22,8 +28,8 @@ describe BnetApi::WoW do
     expect(ability['hideHints']).to eq false
   end
 
-  it "gets a battlepet species from the API" do
-    species = BnetApi::WoW.battlepet_species(258)
+  it "gets a pet species from the API" do
+    species = BnetApi::WoW.pet_species(258)
 
     expect(species['speciesId']).to eq 258
     expect(species['petTypeId']).to eq 9
@@ -36,8 +42,8 @@ describe BnetApi::WoW do
     expect(species['abilities']).not_to be_nil
   end
 
-  it "gets battlepet stats data from the API" do
-    stats = BnetApi::WoW.battlepet_stats(258, level: 25, breedId: 5, qualityId: 4)
+  it "gets pet stats data from the API" do
+    stats = BnetApi::WoW.pet_stats(258, level: 25, breedId: 5, qualityId: 4)
 
     expect(stats['speciesId']).to eq 258
     expect(stats['breedId']).to eq 5

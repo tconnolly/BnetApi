@@ -40,7 +40,7 @@ describe BnetApi::SC2 do
   end
 
   it "gets a ladder from the API" do
-    ladder = BnetApi::SC2.ladder('grandmaster')
+    ladder = BnetApi::SC2.ladder(185245)
 
     expect(ladder['ladderMembers']).not_to be_nil
   end

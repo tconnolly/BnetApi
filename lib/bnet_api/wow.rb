@@ -21,43 +21,6 @@ module BnetApi
       BnetApi.make_request("/wow/auction/data/#{realm}")
     end
 
-    # Retrieves the battlepet ability with the specified ID.
-    #
-    # @param id [Integer] The ID of the ability.
-    # @return [Hash] A hash containing the ability data.
-    def battlepet_ability(id)
-      BnetApi.make_request("/wow/battlePet/ability/#{id}")
-    end
-
-    # Retrieves the battlepet species with the specified ID.
-    #
-    # @param id [Integer] The ID of the species.
-    # @return [Hash] A hash containing the species data.
-    def battlepet_species(id)
-      BnetApi.make_request("/wow/battlePet/species/#{id}")
-    end
-
-    # Retrieves the stats for the battlepet with the specified ID.
-    #
-    # @param species_id [Integer] The ID of the battlepet species.
-    # @param options [Hash] Any additional options.
-    # @option options [Integer] :level The level of the species.
-    # @option options [Integer] :breedId The ID of the breed.
-    # @option options [Integer] :qualityId The quality of the battlepet.
-    # @return [Hash] A hash containing the battlepet stats data.
-    def battlepet_stats(species_id, options = {})
-      level = options[:level] || 1
-      breedId = options[:breedId] || 3
-      qualityId = options[:qualityId] || 1
-
-      BnetApi.make_request_with_params("/wow/battlePet/stats/#{species_id}",
-        { 
-          level: level, 
-          breedId: breedId, 
-          qualityId: qualityId }
-      )
-    end
-
     # Retrieves the challenge mode leaderboard for the specified realm.
     #
     # @param realm [String] The realm to retrieve the leaderboard for.
@@ -113,6 +76,47 @@ module BnetApi
         optional_fields = :members, :achievements, :news, :challenge
       end
       BnetApi.make_request("/wow/guild/#{URI.escape(realm)}/#{URI.escape(name)}", optional_fields)
+    end
+    
+    def pet_master_list()
+      BnetApi.make_request("/wow/pet/")
+    end
+    
+    # Retrieves the battlepet ability with the specified ID.
+    #
+    # @param id [Integer] The ID of the ability.
+    # @return [Hash] A hash containing the ability data.
+    def pet_ability(id)
+      BnetApi.make_request("/wow/pet/ability/#{id}")
+    end
+
+    # Retrieves the battlepet species with the specified ID.
+    #
+    # @param id [Integer] The ID of the species.
+    # @return [Hash] A hash containing the species data.
+    def pet_species(id)
+      BnetApi.make_request("/wow/pet/species/#{id}")
+    end
+
+    # Retrieves the stats for the battlepet with the specified ID.
+    #
+    # @param species_id [Integer] The ID of the battlepet species.
+    # @param options [Hash] Any additional options.
+    # @option options [Integer] :level The level of the species.
+    # @option options [Integer] :breedId The ID of the breed.
+    # @option options [Integer] :qualityId The quality of the battlepet.
+    # @return [Hash] A hash containing the battlepet stats data.
+    def pet_stats(species_id, options = {})
+      level = options[:level] || 1
+      breedId = options[:breedId] || 3
+      qualityId = options[:qualityId] || 1
+
+      BnetApi.make_request_with_params("/wow/pet/stats/#{species_id}",
+        { 
+          level: level, 
+          breedId: breedId, 
+          qualityId: qualityId }
+      )
     end
 
     # Retrieves the PvP leaderboard for the specified bracket.

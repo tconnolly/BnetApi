@@ -1,3 +1,3 @@
 module BnetApi
-	VERSION = '0.1.5'
+	VERSION = '1.0.0'
 end
