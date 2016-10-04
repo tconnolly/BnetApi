@@ -78,11 +78,14 @@ module BnetApi
       BnetApi.make_request("/wow/guild/#{URI.escape(realm)}/#{URI.escape(name)}", optional_fields)
     end
     
-    def pet_master_list()
+    # Retrieves a list of all battle and vanity pets.
+    #
+    # @return [Hash] A hash containing a list of pets.
+    def pet_master_list
       BnetApi.make_request("/wow/pet/")
     end
     
-    # Retrieves the battlepet ability with the specified ID.
+    # Retrieves the pet ability with the specified ID.
     #
     # @param id [Integer] The ID of the ability.
     # @return [Hash] A hash containing the ability data.
@@ -90,7 +93,7 @@ module BnetApi
       BnetApi.make_request("/wow/pet/ability/#{id}")
     end
 
-    # Retrieves the battlepet species with the specified ID.
+    # Retrieves the pet species with the specified ID.
     #
     # @param id [Integer] The ID of the species.
     # @return [Hash] A hash containing the species data.
@@ -98,14 +101,14 @@ module BnetApi
       BnetApi.make_request("/wow/pet/species/#{id}")
     end
 
-    # Retrieves the stats for the battlepet with the specified ID.
+    # Retrieves the stats for the pet with the specified ID.
     #
-    # @param species_id [Integer] The ID of the battlepet species.
+    # @param species_id [Integer] The ID of the pet species.
     # @param options [Hash] Any additional options.
     # @option options [Integer] :level The level of the species.
     # @option options [Integer] :breedId The ID of the breed.
-    # @option options [Integer] :qualityId The quality of the battlepet.
-    # @return [Hash] A hash containing the battlepet stats data.
+    # @option options [Integer] :qualityId The quality of the pet.
+    # @return [Hash] A hash containing the pet stats data.
     def pet_stats(species_id, options = {})
       level = options[:level] || 1
       breedId = options[:breedId] || 3
